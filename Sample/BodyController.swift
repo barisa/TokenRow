@@ -17,7 +17,7 @@ final class BodyController {
             BodyPart(id: "3", description:"Leg"),
             BodyPart(id: "4", description:"Head"),
             BodyPart(id: "5", description:"Brain"),
-            BodyPart(id: "6", description:"Back")
+            BodyPart(id: "6", description:"Leg")
         ]
     }
     
