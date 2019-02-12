@@ -34,6 +34,7 @@
 		87A3F348221228DC006EF96B /* TableViewTokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F341221228DC006EF96B /* TableViewTokenCell.swift */; };
 		87A3F349221228DC006EF96B /* TokenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F342221228DC006EF96B /* TokenRow.swift */; };
 		87A3F34A221228DC006EF96B /* String+TokenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F343221228DC006EF96B /* String+TokenRow.swift */; };
+		87C14D2E22136E6F00372273 /* CLTokenInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C14D2D22136E6F00372273 /* CLTokenInputView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		87A3F341221228DC006EF96B /* TableViewTokenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTokenCell.swift; sourceTree = "<group>"; };
 		87A3F342221228DC006EF96B /* TokenRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenRow.swift; sourceTree = "<group>"; };
 		87A3F343221228DC006EF96B /* String+TokenRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TokenRow.swift"; sourceTree = "<group>"; };
+		87C14D2D22136E6F00372273 /* CLTokenInputView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CLTokenInputView.framework; path = Carthage/Build/iOS/CLTokenInputView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A3F33B2212259A006EF96B /* Eureka.framework in Frameworks */,
+				87C14D2E22136E6F00372273 /* CLTokenInputView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +236,7 @@
 		87A3F33622122440006EF96B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87C14D2D22136E6F00372273 /* CLTokenInputView.framework */,
 				87A3F33722122440006EF96B /* Eureka.framework */,
 			);
 			name = Frameworks;
