@@ -27,14 +27,14 @@
 		87A3F32B221221AC006EF96B /* TokenRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F32A221221AC006EF96B /* TokenRowTests.swift */; };
 		87A3F32D221221AC006EF96B /* TokenRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A3F31F221221AC006EF96B /* TokenRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87A3F33B2212259A006EF96B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F33722122440006EF96B /* Eureka.framework */; };
-		87A3F344221228DC006EF96B /* TRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F33D221228DC006EF96B /* TRCollectionViewCell.swift */; };
-		87A3F345221228DC006EF96B /* TRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F33E221228DC006EF96B /* TRTableViewCell.swift */; };
-		87A3F346221228DC006EF96B /* TokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F33F221228DC006EF96B /* TokenCell.swift */; };
-		87A3F347221228DC006EF96B /* CollectionViewTokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F340221228DC006EF96B /* CollectionViewTokenCell.swift */; };
-		87A3F348221228DC006EF96B /* TableViewTokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F341221228DC006EF96B /* TableViewTokenCell.swift */; };
-		87A3F349221228DC006EF96B /* TokenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F342221228DC006EF96B /* TokenRow.swift */; };
-		87A3F34A221228DC006EF96B /* String+TokenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F343221228DC006EF96B /* String+TokenRow.swift */; };
 		87C14D2E22136E6F00372273 /* CLTokenInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C14D2D22136E6F00372273 /* CLTokenInputView.framework */; };
+		87C14D4D2213897100372273 /* TRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D462213897100372273 /* TRCollectionViewCell.swift */; };
+		87C14D4E2213897100372273 /* TRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D472213897100372273 /* TRTableViewCell.swift */; };
+		87C14D4F2213897100372273 /* TokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D482213897100372273 /* TokenCell.swift */; };
+		87C14D502213897100372273 /* CollectionViewTokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D492213897100372273 /* CollectionViewTokenCell.swift */; };
+		87C14D512213897100372273 /* TableViewTokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D4A2213897100372273 /* TableViewTokenCell.swift */; };
+		87C14D522213897100372273 /* TokenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D4B2213897100372273 /* TokenRow.swift */; };
+		87C14D532213897100372273 /* String+TokenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D4C2213897100372273 /* String+TokenRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,14 +100,14 @@
 		87A3F32A221221AC006EF96B /* TokenRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRowTests.swift; sourceTree = "<group>"; };
 		87A3F32C221221AC006EF96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87A3F33722122440006EF96B /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
-		87A3F33D221228DC006EF96B /* TRCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRCollectionViewCell.swift; sourceTree = "<group>"; };
-		87A3F33E221228DC006EF96B /* TRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRTableViewCell.swift; sourceTree = "<group>"; };
-		87A3F33F221228DC006EF96B /* TokenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenCell.swift; sourceTree = "<group>"; };
-		87A3F340221228DC006EF96B /* CollectionViewTokenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewTokenCell.swift; sourceTree = "<group>"; };
-		87A3F341221228DC006EF96B /* TableViewTokenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTokenCell.swift; sourceTree = "<group>"; };
-		87A3F342221228DC006EF96B /* TokenRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenRow.swift; sourceTree = "<group>"; };
-		87A3F343221228DC006EF96B /* String+TokenRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TokenRow.swift"; sourceTree = "<group>"; };
 		87C14D2D22136E6F00372273 /* CLTokenInputView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CLTokenInputView.framework; path = Carthage/Build/iOS/CLTokenInputView.framework; sourceTree = "<group>"; };
+		87C14D462213897100372273 /* TRCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRCollectionViewCell.swift; sourceTree = "<group>"; };
+		87C14D472213897100372273 /* TRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRTableViewCell.swift; sourceTree = "<group>"; };
+		87C14D482213897100372273 /* TokenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenCell.swift; sourceTree = "<group>"; };
+		87C14D492213897100372273 /* CollectionViewTokenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewTokenCell.swift; sourceTree = "<group>"; };
+		87C14D4A2213897100372273 /* TableViewTokenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTokenCell.swift; sourceTree = "<group>"; };
+		87C14D4B2213897100372273 /* TokenRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenRow.swift; sourceTree = "<group>"; };
+		87C14D4C2213897100372273 /* String+TokenRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TokenRow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,7 @@
 		87A3F312221221AC006EF96B = {
 			isa = PBXGroup;
 			children = (
-				87A3F31E221221AC006EF96B /* TokenRow */,
+				87C14D452213897100372273 /* Sources */,
 				87A3F329221221AC006EF96B /* TokenRowTests */,
 				874E647122122BAD008F7D82 /* Sample */,
 				874E648622122BAE008F7D82 /* SampleTests */,
@@ -212,16 +212,6 @@
 				874E648322122BAE008F7D82 /* SampleTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		87A3F31E221221AC006EF96B /* TokenRow */ = {
-			isa = PBXGroup;
-			children = (
-				87A3F33C221228DC006EF96B /* Sources */,
-				87A3F31F221221AC006EF96B /* TokenRow.h */,
-				87A3F320221221AC006EF96B /* Info.plist */,
-			);
-			path = TokenRow;
 			sourceTree = "<group>";
 		};
 		87A3F329221221AC006EF96B /* TokenRowTests */ = {
@@ -242,19 +232,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		87A3F33C221228DC006EF96B /* Sources */ = {
+		87C14D452213897100372273 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				87A3F33D221228DC006EF96B /* TRCollectionViewCell.swift */,
-				87A3F33E221228DC006EF96B /* TRTableViewCell.swift */,
-				87A3F33F221228DC006EF96B /* TokenCell.swift */,
-				87A3F340221228DC006EF96B /* CollectionViewTokenCell.swift */,
-				87A3F341221228DC006EF96B /* TableViewTokenCell.swift */,
-				87A3F342221228DC006EF96B /* TokenRow.swift */,
-				87A3F343221228DC006EF96B /* String+TokenRow.swift */,
+				87A3F31F221221AC006EF96B /* TokenRow.h */,
+				87A3F320221221AC006EF96B /* Info.plist */,
+				87C14D462213897100372273 /* TRCollectionViewCell.swift */,
+				87C14D472213897100372273 /* TRTableViewCell.swift */,
+				87C14D482213897100372273 /* TokenCell.swift */,
+				87C14D492213897100372273 /* CollectionViewTokenCell.swift */,
+				87C14D4A2213897100372273 /* TableViewTokenCell.swift */,
+				87C14D4B2213897100372273 /* TokenRow.swift */,
+				87C14D4C2213897100372273 /* String+TokenRow.swift */,
 			);
 			path = Sources;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -475,13 +467,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A3F347221228DC006EF96B /* CollectionViewTokenCell.swift in Sources */,
-				87A3F346221228DC006EF96B /* TokenCell.swift in Sources */,
-				87A3F34A221228DC006EF96B /* String+TokenRow.swift in Sources */,
-				87A3F349221228DC006EF96B /* TokenRow.swift in Sources */,
-				87A3F344221228DC006EF96B /* TRCollectionViewCell.swift in Sources */,
-				87A3F348221228DC006EF96B /* TableViewTokenCell.swift in Sources */,
-				87A3F345221228DC006EF96B /* TRTableViewCell.swift in Sources */,
+				87C14D502213897100372273 /* CollectionViewTokenCell.swift in Sources */,
+				87C14D4F2213897100372273 /* TokenCell.swift in Sources */,
+				87C14D532213897100372273 /* String+TokenRow.swift in Sources */,
+				87C14D522213897100372273 /* TokenRow.swift in Sources */,
+				87C14D4D2213897100372273 /* TRCollectionViewCell.swift in Sources */,
+				87C14D512213897100372273 /* TableViewTokenCell.swift in Sources */,
+				87C14D4E2213897100372273 /* TRTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,7 +736,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = TokenRow/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -772,7 +764,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = TokenRow/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

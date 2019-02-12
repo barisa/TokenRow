@@ -24,8 +24,8 @@ By [Xmartlabs SRL](http://EurekaCommunity.com).
 
 TokenRow is a row extension for Eureka. It includes a [CLTokenInputView] which allows the user to select, add and remove tokens.
 
- <img src="TokenRow/Media/TokenAccessoryView.gif" width="300"/>
- <img src="TokenRow/Media/TokenTableView.gif" width="300"/>
+ <img src="Media/TokenAccessoryView.gif" width="300"/>
+ <img src="Media/TokenTableView.gif" width="300"/>
 
 TokenRow includes two rows with similar functionality but their options are displayed differently:
 * TokenAccessoryRow: displays a collection view as the `inputAccessoryView` of the cell. The user will be able to scroll horizontally to select the desired token
@@ -165,7 +165,7 @@ row.getTokensForString = { [weak self, row] string in
 
 It is as simple as that (at least if you are familiar with Alamofire). You can see a working example of this in the [Examples](#examples) project.
 
- <img src="TokenRow/Media/TokenTableViewCustom.gif" width="300"/>
+ <img src="Media/TokenTableViewCustom.gif" width="300"/>
 
 ### TokenAccessoryRow
 TokenAccessoryRow uses a generic `TokenCollectionCell` cell whose generic parameter is the UICollectionViewCell class used in the inputAccessoryView.
