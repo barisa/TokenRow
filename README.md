@@ -70,25 +70,13 @@ Before contributing check the [CONTRIBUTING](https://github.com/EurekaCommunity/
 
 If you use **TokenRow** in your app we would love to hear about it! Drop us a line on [twitter](https://twitter.com/EurekaCommunity).
 
-## Examples
-
-Follow these steps to run Example project:
-* Clone TokenRow repository
-* Run `pod install` in the `TokenRow/Example` folder
-* Open Example workspace in that folder
 
 
 ## Installation
 
-#### CocoaPods
+#### Carthage
+github "nolascoin/TokenRow" ~> 1.4.1
 
-[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects.
-
-To install TokenRow, simply add the following line to your Podfile:
-
-```ruby
-pod 'TokenRow'
-```
 
 ## TokenSearchable
 
