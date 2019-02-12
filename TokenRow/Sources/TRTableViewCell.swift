@@ -24,7 +24,7 @@ open class TRTableViewCell<Token: TokenSearchable>: UITableViewCell, EurekaToken
     }
     
     func initialize() {
-        textLabel?.font = UIFont.systemFont(ofSize: 16)
+        textLabel?.font = UIFont.systemFont(ofSize: 17)
         textLabel?.minimumScaleFactor = 0.8
         textLabel?.adjustsFontSizeToFitWidth = true
         textLabel?.textColor = UIColor.blue

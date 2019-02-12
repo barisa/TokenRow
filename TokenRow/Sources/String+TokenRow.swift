@@ -11,6 +11,7 @@ import Foundation
 extension String: TokenSearchable {
 
     public var displayString: String { return self }
+    public var longDisplayString: String { return self }
     public var identifier: NSObject { return self as NSObject }
 
     public func contains(token: String) -> Bool {

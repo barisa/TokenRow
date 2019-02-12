@@ -19,6 +19,7 @@ public protocol EurekaTokenTableViewCell {
     func setupForToken(_ token: T)
 }
 
+
 /// Cell that is used in a TokenTableRow. shows a UITableView with options. Generic parameters are: Value of Row and Type of the Cell to be shown in the UITableView that shows the options
 open class TableTokenCell<T, TableViewCell: UITableViewCell>: TokenCell<T>, UITableViewDelegate, UITableViewDataSource where TableViewCell: EurekaTokenTableViewCell, TableViewCell.T == T {
 
@@ -72,7 +73,10 @@ open class TableTokenCell<T, TableViewCell: UITableViewCell>: TokenCell<T>, UITa
     @objc open func tokenInputView(_ aView: CLTokenInputView, didChangeText text: String?) {
         if let text = text , !text.isEmpty {
             if let newTokens = (row as! _TokenRow<T, TableTokenCell<T, TableViewCell>>).getTokensForString(text) {
+                debugPrint("newTokens")
                 filteredTokens = newTokens
+            } else {
+                debugPrint("newTokens nope")
             }
             showOptions()
         }

@@ -15,6 +15,7 @@ import CLTokenInputView
  */
 public protocol TokenSearchable: Hashable {
     var displayString: String { get }
+    var longDisplayString: String { get }
     func contains(token: String) -> Bool
     var identifier: NSObject { get }
 }
@@ -27,7 +28,6 @@ open class _TokenRow<T: TokenSearchable, Cell: BaseCell> : Row<Cell> where Cell:
     required public init(tag: String?) {
         super.init(tag: tag)
         value = Set()
-        displayValueFor = nil
     }
     
     /// Get tokens that match a given search text. Useful when you want to get those tokens asynchronously
@@ -67,6 +67,16 @@ open class _TokenRow<T: TokenSearchable, Cell: BaseCell> : Row<Cell> where Cell:
         value?.insert(token)
         cell.tokenView.add(CLToken(displayText: token.displayString, context: token.identifier))
     }
+    
+    /// adds tokens
+    open func appendTokens(_ tokens: Set<T>?) {
+        guard let tokens = tokens else {
+            return
+        }
+        tokens.forEach { (token) in
+            addToken(token)
+        }
+    }
 }
 
 /// TokenRow that shows its options in the inputAccessoryView
@@ -80,6 +90,7 @@ public final class TokenAccessoryRow<T: TokenSearchable>: _TokenRow<T, Collectio
 public final class TokenTableRow<T: TokenSearchable>: _TokenRow<T, TableTokenCell<T, TRTableViewCell<T>>>, RowType {
     required public init(tag: String?) {
         super.init(tag: tag)
+
     }
 }
 
@@ -92,5 +103,6 @@ protocol TokenRowProtocol {
     func addToken(_ tokenIdentifier: NSObject)
     func removeToken(_ tokenIdentifier: NSObject)
 }
+
 
 extension _TokenRow: TokenRowProtocol {}

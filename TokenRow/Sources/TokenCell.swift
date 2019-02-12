@@ -19,11 +19,14 @@ open class TokenCell<T: TokenSearchable>: Cell<Set<T>>, CLTokenInputViewDelegate
 
     /// View that contains the tokens of this row
     lazy public var tokenView: CLTokenInputView = { [weak self] in
-        guard let me = self else { return CLTokenInputView() }
+        guard let me = self else {
+            return CLTokenInputView()
+        }
         let tokenView = CLTokenInputView(frame: me.frame)
         tokenView.translatesAutoresizingMaskIntoConstraints = false
         tokenView.accessoryView = nil
         tokenView.delegate = me
+        
         return tokenView
     }()
 
@@ -68,6 +71,7 @@ open class TokenCell<T: TokenSearchable>: Cell<Set<T>>, CLTokenInputViewDelegate
         setupConstraints()
         selectionStyle = .none
         tokenView.backgroundColor = .clear
+        
     }
 
     open override func update() {
