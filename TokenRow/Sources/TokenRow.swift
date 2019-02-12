@@ -82,7 +82,7 @@ open class _TokenRow<T: TokenSearchable, Cell: BaseCell> : Row<Cell> where Cell:
 /// TokenRow that shows its options in the inputAccessoryView
 public final class TokenAccessoryRow<T: TokenSearchable>: _TokenRow<T, CollectionTokenCell<T, TRCollectionViewCell<T>>>, RowType {
     required public init(tag: String?) {
-        super.init(tag: tag)
+        super.init(tag: tag)       
     }
 }
 

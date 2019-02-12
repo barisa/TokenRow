@@ -11,7 +11,7 @@ import TokenRow
 class ViewController: FormViewController {
 
     private lazy var controller = {
-        return Controller()
+        return StockController()
     }()
     
     override func viewDidLoad() {
@@ -22,11 +22,16 @@ class ViewController: FormViewController {
                 $0.tag = "symbols"
                 $0.placeholder = "Choose"
                 $0.options = controller.data()
-                $0.appendTokens(self.controller.existing())        
+                $0.appendTokens(self.controller.existing())
                 }.onChange({ (row) in
-                    debugPrint("changed")
+                    debugPrint("onChange")
+                }).onAccessoryView({ (row) in
+                    debugPrint("onAccessoryView")         
+                    row.appendTokens(self.controller.existing())
                 }).onCellHighlightChanged({ (cell, row) in
-                    debugPrint("left/entered")
+                    debugPrint("onCellHighlightChanged")
+                }).cellSetup({ (cell, row) in
+                    debugPrint("cellSetup")
                 })
             +++ Section("Section2")
             <<< ActionSheetRow<String>() {

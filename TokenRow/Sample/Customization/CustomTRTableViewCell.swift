@@ -32,4 +32,3 @@ class CustomTRTableViewCell<Token: TokenSearchable>: UITableViewCell, EurekaToke
         textLabel?.text = token.longDisplayString
     }
 }
-
