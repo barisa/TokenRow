@@ -11,14 +11,14 @@ import TokenRow
 class ViewController: FormViewController {
 
     private lazy var controller = {
-        return StockController()
+        return BodyController()
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         form +++ Section("Example")
-            <<< CustomTokenTableRow<Stock>() {
+            <<< CustomTokenTableRow<BodyPart>() {
                 $0.tag = "symbols"
                 $0.placeholder = "Choose"
                 $0.options = controller.data()
