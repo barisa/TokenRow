@@ -15,15 +15,12 @@
 		874E648822122BAE008F7D82 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874E648722122BAE008F7D82 /* SampleTests.swift */; };
 		874E64922212302A008F7D82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874E64902212302A008F7D82 /* ViewController.swift */; };
 		874E64932212302A008F7D82 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 874E64912212302A008F7D82 /* ViewController.xib */; };
-		874E6494221230C0008F7D82 /* TokenRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F31C221221AC006EF96B /* TokenRow.framework */; };
-		874E6495221230C0008F7D82 /* TokenRow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F31C221221AC006EF96B /* TokenRow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		874E6498221230C0008F7D82 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F33722122440006EF96B /* Eureka.framework */; };
 		874E6499221230C0008F7D82 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F33722122440006EF96B /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		874E649C22123150008F7D82 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874E649B22123150008F7D82 /* Stock.swift */; };
 		874E649F221233D7008F7D82 /* StockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874E649E221233D7008F7D82 /* StockController.swift */; };
 		874E64A2221237E2008F7D82 /* CustomTRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874E64A1221237E2008F7D82 /* CustomTRTableViewCell.swift */; };
 		874E64A422123876008F7D82 /* CustomTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874E64A322123876008F7D82 /* CustomTableRow.swift */; };
-		87A3F326221221AC006EF96B /* TokenRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F31C221221AC006EF96B /* TokenRow.framework */; };
 		87A3F32B221221AC006EF96B /* TokenRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F32A221221AC006EF96B /* TokenRowTests.swift */; };
 		87A3F32D221221AC006EF96B /* TokenRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A3F31F221221AC006EF96B /* TokenRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87C14D4D2213897100372273 /* TRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D462213897100372273 /* TRCollectionViewCell.swift */; };
@@ -66,7 +63,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				874E6495221230C0008F7D82 /* TokenRow.framework in Embed Frameworks */,
 				874E6499221230C0008F7D82 /* Eureka.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -113,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874E6494221230C0008F7D82 /* TokenRow.framework in Frameworks */,
 				874E6498221230C0008F7D82 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A3F326221221AC006EF96B /* TokenRow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
