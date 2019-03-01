@@ -26,8 +26,6 @@
 		87A3F326221221AC006EF96B /* TokenRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F31C221221AC006EF96B /* TokenRow.framework */; };
 		87A3F32B221221AC006EF96B /* TokenRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3F32A221221AC006EF96B /* TokenRowTests.swift */; };
 		87A3F32D221221AC006EF96B /* TokenRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A3F31F221221AC006EF96B /* TokenRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87A3F33B2212259A006EF96B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3F33722122440006EF96B /* Eureka.framework */; };
-		87C14D2E22136E6F00372273 /* CLTokenInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C14D2D22136E6F00372273 /* CLTokenInputView.framework */; };
 		87C14D4D2213897100372273 /* TRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D462213897100372273 /* TRCollectionViewCell.swift */; };
 		87C14D4E2213897100372273 /* TRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D472213897100372273 /* TRTableViewCell.swift */; };
 		87C14D4F2213897100372273 /* TokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D482213897100372273 /* TokenCell.swift */; };
@@ -131,8 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A3F33B2212259A006EF96B /* Eureka.framework in Frameworks */,
-				87C14D2E22136E6F00372273 /* CLTokenInputView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
