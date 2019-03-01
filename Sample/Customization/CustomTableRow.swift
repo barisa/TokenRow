@@ -35,12 +35,14 @@ final class CustomTokenTableRow<T: TokenSearchable>: _TokenRow<T, TableTokenCell
             c.textLabel?.numberOfLines = 0
         }
         cell.tokenView.accessoryView =  accessoryViewButton
+        cell.tokenView.textField.textColor = .black
+//        cell.tokenView.textField.textColor = UIColor.orange
+//        cell.tokenView.fieldColor = UIColor.yellow
+//        cell.tokenView.tintColor = UIColor.green
+//        cell.tokenView.selectedBackgroundColor = UIColor.purple
     }
     
     override func addToken(_ token: T) {
         super.addToken(token)
-        cell.tokenView.textField.textColor = UIColor.orange
-        cell.tokenView.fieldColor = UIColor.red
-        cell.tokenView.tintColor = UIColor.black
     }
 }

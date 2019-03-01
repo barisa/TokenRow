@@ -68,6 +68,12 @@ open class _TokenRow<T: TokenSearchable, Cell: BaseCell> : Row<Cell> where Cell:
         cell.tokenView.add(CLToken(displayText: token.displayString, context: token.identifier))
     }
     
+    open func removeAllTokens() {
+        value?.forEach({ (token) in
+            removeToken(token)
+        })
+    }
+    
     /// adds tokens
     open func appendTokens(_ tokens: Set<T>?) {
         guard let tokens = tokens else {

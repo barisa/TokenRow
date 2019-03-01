@@ -73,11 +73,8 @@ open class TableTokenCell<T, TableViewCell: UITableViewCell>: TokenCell<T>, UITa
     @objc open func tokenInputView(_ aView: CLTokenInputView, didChangeText text: String?) {
         if let text = text , !text.isEmpty {
             if let newTokens = (row as! _TokenRow<T, TableTokenCell<T, TableViewCell>>).getTokensForString(text) {
-                debugPrint("newTokens")
                 filteredTokens = newTokens
-            } else {
-                debugPrint("newTokens nope")
-            }
+            } 
             showOptions()
         }
         else {

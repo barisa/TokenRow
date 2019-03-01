@@ -45,7 +45,15 @@ class ViewController: FormViewController {
             <<< DateRow(){
                 $0.title = "Date Row"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
-        }
+            
+            }
+            <<< ButtonRow {
+                $0.title = "Test"
+                $0.onCellSelection({ (cell, row) in
+                    debugPrint("test")
+                    self.form.validate()
+                })
+            }
         
     }
 }

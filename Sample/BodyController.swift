@@ -25,6 +25,6 @@ final class BodyController {
     }
     
     func existing() -> Set<BodyPart> {
-        return []
+        return [BodyPart(id: "1", description:"Ear")]
     }
 }

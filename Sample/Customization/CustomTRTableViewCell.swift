@@ -23,7 +23,7 @@ class CustomTRTableViewCell<Token: TokenSearchable>: UITableViewCell, EurekaToke
     }
     
     func initialize() {
-        textLabel?.font = UIFont.systemFont(ofSize: 17)
+        textLabel?.font = UIFont.systemFont(ofSize: 20)
         textLabel?.minimumScaleFactor = 0.8
         textLabel?.adjustsFontSizeToFitWidth = true
     }
