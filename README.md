@@ -2,7 +2,8 @@
 
 <p align="left">
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
-<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 4 compatible" /></a>
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift5-compatible-4BC51D.svg?style=flat" alt="Swift 4 compatible" /></a>
+<a href="https://cocoapods.org/pods/TokenRow"><img src="https://img.shields.io/cocoapods/v/TokenRow.svg" alt="CocoaPods compatible" /></a>
 <a href="https://raw.githubusercontent.com/EurekaCommunity/TokenRow/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 </p>
 
@@ -24,8 +25,8 @@ By [Xmartlabs SRL](http://EurekaCommunity.com).
 
 TokenRow is a row extension for Eureka. It includes a [CLTokenInputView] which allows the user to select, add and remove tokens.
 
- <img src="Media/TokenAccessoryView.gif" width="300"/>
- <img src="Media/TokenTableView.gif" width="300"/>
+ <img src="TokenRow/Media/TokenAccessoryView.gif" width="300"/>
+ <img src="TokenRow/Media/TokenTableView.gif" width="300"/>
 
 TokenRow includes two rows with similar functionality but their options are displayed differently:
 * TokenAccessoryRow: displays a collection view as the `inputAccessoryView` of the cell. The user will be able to scroll horizontally to select the desired token
@@ -51,13 +52,13 @@ form +++ Section()
 To see what you can customize have a look at the [Customization](#customization) section.
 
 ## Dependencies
-* [Eureka] 4.x
+* [Eureka] 5.x
 * [CLTokenInputView] which is a token view pod
 
 ## Requirements
 
-* iOS 8.0+
-* Xcode 8.3+
+* iOS 9.3+
+* Xcode 10.2+
 
 ## Getting involved
 
@@ -69,13 +70,25 @@ Before contributing check the [CONTRIBUTING](https://github.com/EurekaCommunity/
 
 If you use **TokenRow** in your app we would love to hear about it! Drop us a line on [twitter](https://twitter.com/EurekaCommunity).
 
+## Examples
+
+Follow these steps to run Example project:
+* Clone TokenRow repository
+* Run `pod install` in the `TokenRow/Example` folder
+* Open Example workspace in that folder
 
 
 ## Installation
 
-#### Carthage
-github "nolascoin/TokenRow" ~> 1.4.1
+#### CocoaPods
 
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects.
+
+To install TokenRow, simply add the following line to your Podfile:
+
+```ruby
+pod 'TokenRow'
+```
 
 ## TokenSearchable
 
@@ -165,7 +178,7 @@ row.getTokensForString = { [weak self, row] string in
 
 It is as simple as that (at least if you are familiar with Alamofire). You can see a working example of this in the [Examples](#examples) project.
 
- <img src="Media/TokenTableViewCustom.gif" width="300"/>
+ <img src="TokenRow/Media/TokenTableViewCustom.gif" width="300"/>
 
 ### TokenAccessoryRow
 TokenAccessoryRow uses a generic `TokenCollectionCell` cell whose generic parameter is the UICollectionViewCell class used in the inputAccessoryView.
